@@ -4,8 +4,9 @@ import ApolloClient from 'apollo-boost'
 import {ApolloProvider} from 'react-apollo'
 import './index.css';
 import App from './App';
+import Character from './Character';
 import * as serviceWorker from './serviceWorker';
-
+import { Router } from "@reach/router";
 
 const client = new ApolloClient ({
 	uri: 'https://rickandmortyapi.com/graphql/' 
@@ -13,7 +14,10 @@ const client = new ApolloClient ({
 
 ReactDOM.render(
 <ApolloProvider client={client}>
-    <App />
+    <Router>
+        <App path="/"/>
+        <Character path="character/:id"/>
+    </Router>
 </ApolloProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
