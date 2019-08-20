@@ -19,6 +19,16 @@ h1,h2,h3,p {
   margin: 0;
 }
 
+a{
+  color: #666;
+  text-decoration:none; 
+}
+
+.App {
+  text-align: center;
+}
+
+
 .card {
   width: 400px;
   margin-bottom: 1rem;
@@ -34,39 +44,6 @@ h1,h2,h3,p {
   padding: 10px;
 }
 .card img {
-  width: 300px;
-  height: auto;
-}
-.line {
-  height: 12px;
-  margin: 10px;
-  animation: pulse 1s infinite ease-in-out;
-  border-radius: 5px;
-}
-.skeleton-image {
-  height: 300px;
-  margin: 10px;
-  animation: pulse 1s infinite ease-in-out;
-  border-radius: 5px;
-}
-.card .content div:nth-child(1){
-  width: 300px;
-}
-.card .content div:nth-child(2){
-  width: 300px;
-}
-.card .content div:nth-child(3){
-  width: 270px;
-}
-
-@keyframes pulse {
-  0% {
-    background-color: rgba(165,165,165,.1)
-  }
-  50% {
-    background-color: rgba(165,165,165,.3)
-  }
-  100% {
-    background-color: rgba(165,165,165,.1)
-  }
+  min-width: 300px;
+  min-height: 300px;
 }

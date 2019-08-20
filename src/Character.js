@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { SingleCharacter } from './SingleCharacter';
 function App(props) {
     console.log(props)
